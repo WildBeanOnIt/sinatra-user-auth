@@ -9,10 +9,12 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
     # your code here
+    erb :home
   end
-
+  
   get '/registrations/signup' do
     # your code here
+    erb :'registrations/signup'
   end
 
   post '/registrations' do
@@ -23,6 +25,7 @@ class ApplicationController < Sinatra::Base
 
   get '/users/home' do
     # your code here
+    erb :'users/home'
   end
 
   get '/sessions/login' do
